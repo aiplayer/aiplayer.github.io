@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>构建基本场景 | aiplayer</title>
+    <meta name="description" content="aiplayer portal">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.f0b62ee8.css" as="style"><link rel="preload" href="/assets/js/app.db1f5619.js" as="script"><link rel="preload" href="/assets/js/2.136755fd.js" as="script"><link rel="preload" href="/assets/js/73.935f8492.js" as="script"><link rel="prefetch" href="/assets/js/10.d8e1a177.js"><link rel="prefetch" href="/assets/js/100.a1569435.js"><link rel="prefetch" href="/assets/js/101.df4254c0.js"><link rel="prefetch" href="/assets/js/102.7238a621.js"><link rel="prefetch" href="/assets/js/103.6066a045.js"><link rel="prefetch" href="/assets/js/104.19e5f9ce.js"><link rel="prefetch" href="/assets/js/105.1da234c6.js"><link rel="prefetch" href="/assets/js/106.205e3402.js"><link rel="prefetch" href="/assets/js/107.175ad760.js"><link rel="prefetch" href="/assets/js/108.a9ac042b.js"><link rel="prefetch" href="/assets/js/109.424d5783.js"><link rel="prefetch" href="/assets/js/11.934355de.js"><link rel="prefetch" href="/assets/js/110.c7bca671.js"><link rel="prefetch" href="/assets/js/111.73c2c60a.js"><link rel="prefetch" href="/assets/js/112.7f5490ea.js"><link rel="prefetch" href="/assets/js/113.14375c6f.js"><link rel="prefetch" href="/assets/js/114.3363197a.js"><link rel="prefetch" href="/assets/js/115.02afb483.js"><link rel="prefetch" href="/assets/js/116.29a7b694.js"><link rel="prefetch" href="/assets/js/117.5be07a33.js"><link rel="prefetch" href="/assets/js/118.0702142c.js"><link rel="prefetch" href="/assets/js/119.6402e457.js"><link rel="prefetch" href="/assets/js/12.c2bc3227.js"><link rel="prefetch" href="/assets/js/120.ac365fc7.js"><link rel="prefetch" href="/assets/js/121.fb021e50.js"><link rel="prefetch" href="/assets/js/122.9fe3b1ea.js"><link rel="prefetch" href="/assets/js/123.27e74ba8.js"><link rel="prefetch" href="/assets/js/124.1d2e32db.js"><link rel="prefetch" href="/assets/js/125.04e7f173.js"><link rel="prefetch" href="/assets/js/126.27d517fd.js"><link rel="prefetch" href="/assets/js/127.64ce51be.js"><link rel="prefetch" href="/assets/js/128.5c40af31.js"><link rel="prefetch" href="/assets/js/129.8e36099a.js"><link rel="prefetch" href="/assets/js/13.30b2fd23.js"><link rel="prefetch" href="/assets/js/130.4404aeed.js"><link rel="prefetch" href="/assets/js/131.9a6be204.js"><link rel="prefetch" href="/assets/js/132.621634ca.js"><link rel="prefetch" href="/assets/js/133.4b393036.js"><link rel="prefetch" href="/assets/js/134.dcc9e5f3.js"><link rel="prefetch" href="/assets/js/135.cdc08eed.js"><link rel="prefetch" href="/assets/js/136.d1361c7f.js"><link rel="prefetch" href="/assets/js/137.70e249cd.js"><link rel="prefetch" href="/assets/js/138.ab5deb19.js"><link rel="prefetch" href="/assets/js/139.11778cf5.js"><link rel="prefetch" href="/assets/js/14.2125223a.js"><link rel="prefetch" href="/assets/js/140.db04184d.js"><link rel="prefetch" href="/assets/js/141.f31f6358.js"><link rel="prefetch" href="/assets/js/142.46e9b5b9.js"><link rel="prefetch" href="/assets/js/143.fa46c1c3.js"><link rel="prefetch" href="/assets/js/144.578e8fe1.js"><link rel="prefetch" href="/assets/js/145.d92b6019.js"><link rel="prefetch" href="/assets/js/146.7959a0f8.js"><link rel="prefetch" href="/assets/js/147.bddc1b3f.js"><link rel="prefetch" href="/assets/js/148.226bfada.js"><link rel="prefetch" href="/assets/js/149.d8549551.js"><link rel="prefetch" href="/assets/js/15.fb8b9ae9.js"><link rel="prefetch" href="/assets/js/150.9e86241e.js"><link rel="prefetch" href="/assets/js/151.796f1274.js"><link rel="prefetch" href="/assets/js/152.d257e8a9.js"><link rel="prefetch" href="/assets/js/153.03854e57.js"><link rel="prefetch" href="/assets/js/154.36494ed7.js"><link rel="prefetch" href="/assets/js/155.a4c0d865.js"><link rel="prefetch" href="/assets/js/156.a5570edb.js"><link rel="prefetch" href="/assets/js/157.d5cfe341.js"><link rel="prefetch" href="/assets/js/16.4840c375.js"><link rel="prefetch" href="/assets/js/17.3db7187c.js"><link rel="prefetch" href="/assets/js/18.3f978365.js"><link rel="prefetch" href="/assets/js/19.0a024717.js"><link rel="prefetch" href="/assets/js/20.8bce2b97.js"><link rel="prefetch" href="/assets/js/21.eb505a2a.js"><link rel="prefetch" href="/assets/js/22.ad76dfcb.js"><link rel="prefetch" href="/assets/js/23.c086b548.js"><link rel="prefetch" href="/assets/js/24.3fb5d63e.js"><link rel="prefetch" href="/assets/js/25.5595455f.js"><link rel="prefetch" href="/assets/js/26.f94f11ad.js"><link rel="prefetch" href="/assets/js/27.f289b5d4.js"><link rel="prefetch" href="/assets/js/28.6eb0556e.js"><link rel="prefetch" href="/assets/js/29.8defe1c0.js"><link rel="prefetch" href="/assets/js/3.28f81bc4.js"><link rel="prefetch" href="/assets/js/30.8ab8f249.js"><link rel="prefetch" href="/assets/js/31.33b536a9.js"><link rel="prefetch" href="/assets/js/32.7df14067.js"><link rel="prefetch" href="/assets/js/33.fbabe129.js"><link rel="prefetch" href="/assets/js/34.53ff114a.js"><link rel="prefetch" href="/assets/js/35.f2c39ebd.js"><link rel="prefetch" href="/assets/js/36.467f6b09.js"><link rel="prefetch" href="/assets/js/37.9e1dd23b.js"><link rel="prefetch" href="/assets/js/38.068c85f4.js"><link rel="prefetch" href="/assets/js/39.b1e0fefa.js"><link rel="prefetch" href="/assets/js/4.8934782b.js"><link rel="prefetch" href="/assets/js/40.bb170fba.js"><link rel="prefetch" href="/assets/js/41.f3ae6a10.js"><link rel="prefetch" href="/assets/js/42.bb54411b.js"><link rel="prefetch" href="/assets/js/43.3c863cb9.js"><link rel="prefetch" href="/assets/js/44.7060ca63.js"><link rel="prefetch" href="/assets/js/45.f3047d76.js"><link rel="prefetch" href="/assets/js/46.9c09c0ab.js"><link rel="prefetch" href="/assets/js/47.5202a7c1.js"><link rel="prefetch" href="/assets/js/48.6e8df322.js"><link rel="prefetch" href="/assets/js/49.0cc3d23d.js"><link rel="prefetch" href="/assets/js/5.a0353814.js"><link rel="prefetch" href="/assets/js/50.3b307fd5.js"><link rel="prefetch" href="/assets/js/51.4fbbe6c7.js"><link rel="prefetch" href="/assets/js/52.331937fe.js"><link rel="prefetch" href="/assets/js/53.dc7c275c.js"><link rel="prefetch" href="/assets/js/54.4f85d82e.js"><link rel="prefetch" href="/assets/js/55.1643757b.js"><link rel="prefetch" href="/assets/js/56.ef32a88b.js"><link rel="prefetch" href="/assets/js/57.c7121932.js"><link rel="prefetch" href="/assets/js/58.16441501.js"><link rel="prefetch" href="/assets/js/59.4e5591f5.js"><link rel="prefetch" href="/assets/js/6.fa571ebd.js"><link rel="prefetch" href="/assets/js/60.967020e8.js"><link rel="prefetch" href="/assets/js/61.71d79f42.js"><link rel="prefetch" href="/assets/js/62.88671447.js"><link rel="prefetch" href="/assets/js/63.7f40e91d.js"><link rel="prefetch" href="/assets/js/64.ef23913e.js"><link rel="prefetch" href="/assets/js/65.63a29bbb.js"><link rel="prefetch" href="/assets/js/66.9f830dea.js"><link rel="prefetch" href="/assets/js/67.0783e6f9.js"><link rel="prefetch" href="/assets/js/68.edb28c91.js"><link rel="prefetch" href="/assets/js/69.58a85f29.js"><link rel="prefetch" href="/assets/js/7.b690ca65.js"><link rel="prefetch" href="/assets/js/70.58d4adb6.js"><link rel="prefetch" href="/assets/js/71.0e2e4dba.js"><link rel="prefetch" href="/assets/js/72.ee7e2979.js"><link rel="prefetch" href="/assets/js/74.d69c06e4.js"><link rel="prefetch" href="/assets/js/75.8afa1dc5.js"><link rel="prefetch" href="/assets/js/76.48c0a6d0.js"><link rel="prefetch" href="/assets/js/77.5e0afc33.js"><link rel="prefetch" href="/assets/js/78.9cb7dc28.js"><link rel="prefetch" href="/assets/js/79.83ec5e2e.js"><link rel="prefetch" href="/assets/js/8.f127e12e.js"><link rel="prefetch" href="/assets/js/80.3776af5c.js"><link rel="prefetch" href="/assets/js/81.539223a8.js"><link rel="prefetch" href="/assets/js/82.ecd88fed.js"><link rel="prefetch" href="/assets/js/83.8b8f52b1.js"><link rel="prefetch" href="/assets/js/84.56e7b62b.js"><link rel="prefetch" href="/assets/js/85.602daf28.js"><link rel="prefetch" href="/assets/js/86.8983b155.js"><link rel="prefetch" href="/assets/js/87.92548279.js"><link rel="prefetch" href="/assets/js/88.1683e878.js"><link rel="prefetch" href="/assets/js/89.57d67dae.js"><link rel="prefetch" href="/assets/js/9.beeca559.js"><link rel="prefetch" href="/assets/js/90.86c4ccad.js"><link rel="prefetch" href="/assets/js/91.b97628b5.js"><link rel="prefetch" href="/assets/js/92.13b4c677.js"><link rel="prefetch" href="/assets/js/93.91e9ad39.js"><link rel="prefetch" href="/assets/js/94.bfd2d19e.js"><link rel="prefetch" href="/assets/js/95.89405747.js"><link rel="prefetch" href="/assets/js/96.de120589.js"><link rel="prefetch" href="/assets/js/97.72fa8b0f.js"><link rel="prefetch" href="/assets/js/98.debed4eb.js"><link rel="prefetch" href="/assets/js/99.992e6d93.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f0b62ee8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">aiplayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link router-link-active">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link router-link-active">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>aframe</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/" class="sidebar-link">AFrame:构建VR应用框架</a></li><li><a href="/aframe/aframe-base.html" class="sidebar-link">AFrame基础</a></li><li><a href="/aframe/aframe-guide.html" class="sidebar-link">开发指南</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-api.html" class="sidebar-link">核心API</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-component.html" class="sidebar-link">组件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>原语</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-primitive.html" class="sidebar-link">AFrame基础控件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="构建基本场景"><a href="#构建基本场景" class="header-anchor">#</a> 构建基本场景</h1> <p>我们先来构建一个基本的a帧场景。为此，我们需要对HTML有一个基本的了解。我们将学习如何：</p> <ul><li><p>使用基本体添加三维实体（即对象）</p></li> <li><p>通过位置、旋转、缩放转换三维空间中的实体</p></li> <li><p>添加环境</p></li> <li><p>添加纹理</p></li> <li><p>使用动画和事件添加基本交互</p></li> <li><p>添加文本</p></li></ul> <h2 id="从html开始"><a href="#从html开始" class="header-anchor">#</a> 从HTML开始</h2> <p>我们从一个最小的HTML结构开始：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;https://aframe.io/releases/1.0.4/aframe.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>我们将A-Frame作为脚本标记包含在</p><head>中，指向托管在CDN上的A-Frame构建。这必须在<a-scene>之前包含，因为a-Frame注册自定义HTML元素，这些元素必须在附加<a-scene>之前定义，否则<a-scene>将不起作用。<p></p> <p>接下来，我们将<a-scene>包含在<body>中。<a-scene>将包含场景中的每个实体。<a-scene>处理3D所需的所有设置：在HTC Vive、Oculus Rift、Samsung GearVR和智能手机（谷歌硬纸板）等平台上设置WebGL、画布、相机、灯光、渲染器、渲染循环以及开箱即用的WebVR支持。<a-scene>一个人就能让我们卸下很多重担！</a-scene></a-scene></a-scene></body></a-scene></p> <h2 id="添加实体"><a href="#添加实体" class="header-anchor">#</a> 添加实体</h2> <p>在<a-scene>中，我们使用a-Frame的一个标准基本体<a-box>附加3D实体。我们可以像普通的HTML元素一样使用<a-box>，定义标记并使用HTML属性对其进行自定义。A-Frame附带的原语的其他一些示例包括<A-collinder>、<A-plane>或<A-sphere>。</A-sphere></A-plane></A-collinder></a-box></a-box></a-scene></p> <p>在这里，我们定义颜色<a-box>，更多属性（如宽度、高度、深度）请参见<a-box>的文档。</a-box></a-box></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box color=&quot;red&quot;&gt;&lt;/a-box&gt;
+&lt;/a-scene&gt;
+
+</code></pre></div><p>另外，原语是a-Frame易于使用的HTML元素，用于包装底层实体组件程序集。它们可能很方便，但在<a-box>下面是<a-entity>的几何和材质组件：</a-entity></a-box></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-entity id=&quot;box&quot; geometry=&quot;primitive: box&quot; material=&quot;color: red&quot;&gt;&lt;/a-entity&gt;
+</code></pre></div><p>但是，由于默认相机和长方体位于原点0 0 0的默认位置，因此除非移动它，否则我们将无法看到长方体。我们可以通过使用位置组件在三维空间中变换长方体来实现这一点。</p> <h2 id="在三维中转换实体"><a href="#在三维中转换实体" class="header-anchor">#</a> 在三维中转换实体</h2> <p>我们先来看看三维空间。A形框架使用右手坐标系。默认相机方向为：正X轴向右延伸，正Y轴向上延伸，正Z轴从屏幕向我们延伸：</p> <p>A帧的距离单位是米，因为WebVRAPI返回的姿势数据是米。在为虚拟现实设计场景时，考虑我们所创建的实体的真实世界规模是很重要的。在我们的电脑屏幕上，一个高度为10的盒子看起来很正常，但在虚拟现实中，这个盒子会显得很大。</p> <p>A-Frame在A-Frame中的旋转单位是度，尽管它在传递到three.js时会在内部转换为弧度。要确定正旋转方向，请使用右手法则。拇指指向正轴的方向，以及手指围绕正旋转方向卷曲的方向。</p> <p>要平移、旋转和缩放长方体，可以更改位置、旋转和缩放组件。首先应用旋转和缩放组件：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box color=&quot;red&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>这将使我们的盒子旋转一个角度，使其大小翻倍。</p> <h3 id="父变换和子变换"><a href="#父变换和子变换" class="header-anchor">#</a> 父变换和子变换</h3> <p>A-Frame HTML表示三维场景图。在场景图中，实体可以有一个父级和多个子级。子实体从其父实体继承变换（即位置、旋转和缩放）。</p> <p>例如，我们可以将球体作为长方体的子对象：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box position=&quot;0 2 0&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 4 2&quot;&gt;
+    &lt;a-sphere position=&quot;1 0 3&quot;&gt;&lt;/a-sphere&gt;
+  &lt;/a-box&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>如果我们计算球体的世界位置，它将是123，通过将球体的父位置与其自身位置组合而实现。类似地，对于旋转和缩放，球体将继承长方体的旋转和缩放。球体也会像其父长方体一样旋转和拉伸。如果长方体要更改其位置、旋转或缩放，它将立即应用于球体并影响球体。</p> <p>如果我们将圆柱体作为子对象添加到球体中，圆柱体的变换将同时受球体变换和长方体变换的影响。在three.js中，这是通过将转换矩阵相乘来完成的。幸运的是，我们不必考虑这个！</p> <h3 id="把我们的箱子放在摄像机前"><a href="#把我们的箱子放在摄像机前" class="header-anchor">#</a> 把我们的箱子放在摄像机前</h3> <p>现在让我们从一开始就让相机看到我们的盒子。我们可以用位置组件在负Z轴上向后移动5米。我们还必须在正Y轴上向上移动2米，这样盒子就不会与地面相交，因为我们缩放了盒子，缩放是从中心开始的：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box color=&quot;red&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="默认控件"><a href="#默认控件" class="header-anchor">#</a> 默认控件</h3> <p>对于平面显示器（即笔记本电脑、台式机），默认的控制方案允许我们通过单击并拖动鼠标来四处查看，并使用WASD或箭头键四处移动。在手机上，我们可以转动手机来旋转相机。虽然A-Frame是为WebVR量身定做的，但是这个默认的控制方案允许人们在没有耳机的情况下观看场景。</p> <p>通过点击连接有虚拟现实耳机的护目镜图标（如Oculus Rift、HTC Vive）进入虚拟现实，我们可以在沉浸式虚拟现实中体验场景。如果房间尺度可用，我们可以在现场走动！</p> <h3 id="添加环境"><a href="#添加环境" class="header-anchor">#</a> 添加环境</h3> <p>A-Frame允许开发人员创建和共享可重用组件，以便其他人轻松使用。@feiss的环境组件通过一行HTML程序为我们生成各种各样的整个环境。环境组件是可视化引导我们的虚拟现实应用程序的一种非常简单的方法，它提供了十几个环境和许多参数：</p> <p>首先，在a帧后使用脚本标记包括环境组件：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;head&gt;
+  &lt;script src=&quot;https://aframe.io/releases/1.0.4/aframe.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre></div><p>然后在场景中，添加附加了环境组件的实体。我们可以指定一个预设值（例如森林）以及许多其他参数（例如200棵树）：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box color=&quot;red&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;!-- Out of the box environment! --&gt;
+  &lt;a-entity environment=&quot;preset: forest; dressingAmount: 500&quot;&gt;&lt;/a-entity&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="应用图像纹理"><a href="#应用图像纹理" class="header-anchor">#</a> 应用图像纹理</h3> <p>确保使用本地服务器为HTML提供服务，以便正确加载纹理。</p> <p>我们可以使用src属性将图像纹理应用到包含图像、视频或<canvas>的框中，就像使用normal<img>元素一样。我们还应该移除设置的color=“red”，这样颜色就不会与纹理混合。默认材质颜色为白色，因此移除“颜色”属性就足够了。</canvas></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot;
+    scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-sky color=&quot;#222&quot;&gt;&lt;/a-sky&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>使用资产管理系统</p> <p>但是，我们建议使用资产管理系统来提高性能。资源管理系统使浏览器更容易缓存资源（如图像、视频、模型），A-Frame将确保在渲染之前获取所有资源。</p> <p>如果我们在资产管理系统中定义<img>，那么后面的3.js不必在内部创建<img>。我们自己创建的<img>也给了我们更多的控制，让我们可以跨多个实体重用纹理。A-Frame也足够聪明，可以在必要时设置crossOrigin和其他此类属性。</p> <p>要将资源管理系统用于图像纹理，请执行以下操作：</p> <ul><li><p>将<a-assets>添加到场景中。</a-assets></p></li> <li><p>将纹理定义为<a-assets>下的<img>。</a-assets></p></li> <li><p>给<img>一个HTML ID（例如ID=“boxTexture”）。</p></li> <li><p>使用DOM选择器格式的ID（src=“35; boxTexture”）引用资源。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;img id=&quot;boxTexture&quot; src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot;&gt;
+  &lt;/a-assets&gt;
+
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-sky color=&quot;#222&quot;&gt;&lt;/a-sky&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h2 id="创建自定义环境（可选）"><a href="#创建自定义环境（可选）" class="header-anchor">#</a> 创建自定义环境（可选）</h2> <p>以前我们让环境组件生成环境。不过，稍微了解一下如何为学习创造一个基本的环境是很好的。</p> <h3 id="向场景添加背景"><a href="#向场景添加背景" class="header-anchor">#</a> 向场景添加背景</h3> <p>我们可以在场景周围添加一个<a-sky>背景。<a-sky>是应用于大球体内部的材质，可以是平面颜色、360°图像或360°视频。例如，深灰色背景将是：</a-sky></a-sky></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-box color=&quot;red&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-sky color=&quot;#222&quot;&gt;&lt;/a-sky&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>或者我们可以使用图像纹理，通过使用src而不是颜色来获得360°背景图像：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;img id=&quot;boxTexture&quot; src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot;&gt;
+    &lt;img id=&quot;skyTexture&quot;
+      src=&quot;https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg&quot;&gt;
+  &lt;/a-assets&gt;
+
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-sky src=&quot;#skyTexture&quot;&gt;&lt;/a-sky&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="添加地面"><a href="#添加地面" class="header-anchor">#</a> 添加地面</h3> <p>要添加地面，可以使用<a-plane>。默认情况下，平面的方向与XY轴平行。为了使它与地面平行，我们需要将它沿XZ轴定向。我们可以在X轴上旋转平面负90°。</a-plane></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-plane rotation=&quot;-90 0 0&quot;&gt;&lt;/a-plane&gt;
+</code></pre></div><p>我们希望地面很大，这样我们可以增加宽度和高度。让我们向每个方向移动30米：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-plane rotation=&quot;-90 0 0&quot; width=&quot;30&quot; height=&quot;30&quot;&gt;&lt;/a-plane&gt;
+</code></pre></div><p>然后我们可以将图像纹理应用到我们的地面：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-assets&gt;
+  &lt;!-- ... --&gt;
+  &lt;img id=&quot;groundTexture&quot; src=&quot;https://cdn.aframe.io/a-painter/images/floor.jpg&quot;&gt;
+  &lt;!-- ... --&gt;
+&lt;/a-assets&gt;
+
+&lt;!-- ... --&gt;
+&lt;a-plane src=&quot;#groundTexture&quot; rotation=&quot;-90 0 0&quot; width=&quot;30&quot; height=&quot;30&quot;&gt;&lt;/a-plane&gt;
+&lt;!-- ... --&gt;
+</code></pre></div><p>要平铺纹理，可以使用repeat属性。重复需要两个数字，在X方向重复多少次，在Y方向重复多少次（纹理通常称为U和V）。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-plane src=&quot;#groundTexture&quot; rotation=&quot;-90 0 0&quot; width=&quot;30&quot; height=&quot;30&quot;
+  repeat=&quot;10 10&quot;&gt;&lt;/a-plane&gt;
+</code></pre></div><h3 id="调整光源"><a href="#调整光源" class="header-anchor">#</a> 调整光源</h3> <p>我们可以使用<a-light>s来更改场景的照明方式。默认情况下，如果不指定任何灯光，a-Frame将添加环境光和平行光。如果A-Frame没有为我们添加灯光，场景将是黑色的。但是，一旦我们添加了自己的灯光，默认的灯光设置将被删除并替换为我们的设置。</a-light></p> <p>我们将添加一个环境光，有一个轻微的蓝绿色色调，以配合天空。环境光应用于场景中的所有实体（假定它们至少应用了默认材质）。</p> <p>我们还将添加点光源。点光源就像灯泡；我们可以将它们放置在场景周围，点光源对实体的影响取决于它与实体的距离：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;img id=&quot;boxTexture&quot; src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot;&gt;
+    &lt;img id=&quot;skyTexture&quot;
+      src=&quot;https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg&quot;&gt;
+    &lt;img id=&quot;groundTexture&quot; src=&quot;https://cdn.aframe.io/a-painter/images/floor.jpg&quot;&gt;
+  &lt;/a-assets&gt;
+
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-sky src=&quot;#skyTexture&quot;&gt;&lt;/a-sky&gt;
+
+  &lt;a-light type=&quot;ambient&quot; color=&quot;#445451&quot;&gt;&lt;/a-light&gt;
+  &lt;a-light type=&quot;point&quot; intensity=&quot;2&quot; position=&quot;2 4 4&quot;&gt;&lt;/a-light&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="添加动画"><a href="#添加动画" class="header-anchor">#</a> 添加动画</h3> <p>我们可以使用A帧的内置动画系统将动画添加到框中。动画随着时间的推移在一个值之间插值。我们可以在实体上设置动画组件。让盒子上下悬停，为场景添加一些运动。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;img id=&quot;boxTexture&quot; src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot;&gt;
+  &lt;/a-assets&gt;
+
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;
+         animation=&quot;property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true&quot;&gt;&lt;/a-box&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>我们告诉动画组件：</p> <ul><li><p>为实体的object3D位置的Y轴设置动画。</p></li> <li><p>动画设置为2.2，高20厘米。</p></li> <li><p>在动画的每个重复周期上交替动画的方向，使其来回移动。</p></li> <li><p>每次循环持续2000毫秒（持续时间）。</p></li> <li><p>循环或永远重复动画。</p></li></ul> <h3 id="添加交互"><a href="#添加交互" class="header-anchor">#</a> 添加交互</h3> <p>让我们添加与长方体的交互：当我们查看长方体时，我们将增大长方体的大小，当我们“单击”长方体时，我们将使其旋转。</p> <p>鉴于许多开发人员目前没有合适的带控制器的虚拟现实硬件，我们将在本节重点介绍如何使用内置光标组件的基本移动和桌面输入。默认情况下，光标组件通过在移动设备上或桌面上盯着实体或盯着它们，看着实体并点击鼠标，提供了“点击”实体的能力。但是要知道光标组件只是添加交互的一种方式，如果我们有权访问实际的控制器，事情就会打开。</p> <p>要将可见光标固定到摄影机上，我们将光标作为摄影机的子对象放置，如上面在父变换和子变换中所述。</p> <p>因为我们没有特别定义相机，所以a-Frame包含了一个默认相机。但是由于我们需要添加一个光标作为相机的子对象，我们现在需要定义包含<a-cursor>的<a-camera>：</a-camera></a-cursor></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;img id=&quot;boxTexture&quot; src=&quot;https://i.imgur.com/mYmmbrp.jpg&quot;&gt;
+  &lt;/a-assets&gt;
+
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;
+         animation=&quot;property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true&quot;&gt;&lt;/a-box&gt;
+
+  &lt;a-camera&gt;
+    &lt;a-cursor&gt;&lt;/a-cursor&gt;
+  &lt;/a-camera&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>如果我们检查<a-cursor>包装的游标组件的文档，就会发现它发出了鼠标悬停事件，比如mouseenter、mouseleave和click。</a-cursor></p> <h3 id="事件侦听器组件（中间）"><a href="#事件侦听器组件（中间）" class="header-anchor">#</a> 事件侦听器组件（中间）</h3> <p>手动处理游标事件的一种方法是使用JavaScript添加事件监听器，就像使用普通DOM元素一样。如果您不熟悉JavaScript，可以跳到下面的事件动画。</p> <p>在JavaScript中，我们使用querySelector获取框，使用addEventListener，然后使用setAttribute使框在悬停时增大其比例。请注意，A-Frame将特性添加到setAttribute以使用多特性组件。我们可以传递一个完整的{x，y，z}对象作为第二个参数。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  var boxEl = document.querySelector('a-box');
+  boxEl.addEventListener('mouseenter', function () {
+    boxEl.setAttribute('scale', {x: 2, y: 2, z: 2});
+  });
+&lt;/script&gt;
+</code></pre></div><p>但是，一个更加健壮的方法是将这个逻辑封装到一个a-Frame组件中。这样，我们就不必等待场景加载，也不必运行查询选择器，因为组件为我们提供了上下文，组件可以重用和配置，而不是在页面上运行不受控制的脚本。更好的方法是跳过calling.setAttribute并直接在this.el.object3D.scale上设置值以提高性能。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  AFRAME.registerComponent('scale-on-mouseenter', {
+    schema: {
+      to: {default: '2.5 2.5 2.5', type: 'vec3'}
+    },
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;
+      this.el.addEventListener('mouseenter', function () {
+        el.object3D.scale.copy(data.to);
+      });
+    }
+  });
+&lt;/script&gt;
+</code></pre></div><p>我们可以直接从HTML将此组件附加到我们的框中：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  AFRAME.registerComponent('scale-on-mouseenter', {
+    // ...
+  });
+&lt;/script&gt;
+
+&lt;a-scene&gt;
+  &lt;!-- ... --&gt;
+  &lt;a-box src=&quot;#boxTexture&quot; position=&quot;0 2 -5&quot; rotation=&quot;0 45 45&quot; scale=&quot;2 2 2&quot;
+         animation=&quot;property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true&quot;
+         scale-on-mouseenter&gt;&lt;/a-box&gt;
+  &lt;!-- ... --&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="在事件上设置动画"><a href="#在事件上设置动画" class="header-anchor">#</a> 在事件上设置动画</h3> <p>动画组件有一个功能，可以在实体发出事件时启动其动画。这可以通过startEvents属性来完成，该属性采用以逗号分隔的事件名称列表。</p> <p>我们可以为光标组件的mouseenter和mouseleave事件添加两个动画来更改框的比例，并在单击时围绕Y轴旋转框。请注意，一个实体可以有多个动画，方法是在属性名后加上“__<ID>”：</ID></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-box
+  src=&quot;#boxTexture&quot;
+  position=&quot;0 2 -5&quot;
+  rotation=&quot;0 45 45&quot;
+  scale=&quot;2 2 2&quot;
+  animation__position=&quot;property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true&quot;
+  animation__mouseenter=&quot;property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter&quot;
+  animation__mouseleave=&quot;property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave&quot;&gt;
+&lt;/a-box&gt;
+
+</code></pre></div><h3 id="添加音频"><a href="#添加音频" class="header-anchor">#</a> 添加音频</h3> <p>音频对于在虚拟现实中提供沉浸感和存在感非常重要。即使在背景中加入简单的白噪声也有很大的帮助。我们建议每个场景都有一些音频。一种方法是将<audio>元素添加到HTML（最好在<a-assets>下）以播放音频文件：</a-assets></audio></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;a-assets&gt;
+    &lt;audio src=&quot;https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav&quot; autoplay
+      preload&gt;&lt;/audio&gt;
+  &lt;/a-assets&gt;
+
+  &lt;!-- ... --&gt;
+&lt;/a-scene&gt;
+</code></pre></div><p>或者我们可以使用<a-sound>添加位置音频。当我们靠近它时，声音会变得更大，当我们远离它时，声音会变得更柔和。我们可以用位置把声音放在场景中。</a-sound></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-scene&gt;
+  &lt;!-- ... --&gt;
+  &lt;a-sound src=&quot;https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav&quot; autoplay=&quot;true&quot;
+    position=&quot;-3 1 -4&quot;&gt;&lt;/a-sound&gt;
+  &lt;!-- ... --&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h3 id="添加文本"><a href="#添加文本" class="header-anchor">#</a> 添加文本</h3> <p>A-Frame带有一个文本组件。有几种呈现文本的方法，每种方法都有各自的优缺点。A-Frame附带了一个SDF文本实现，它使用了三个bmfont文本，这些文本相对清晰且性能良好：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a-entity
+  text=&quot;value: Hello, A-Frame!; color: #BBB&quot;
+  position=&quot;-0.9 0.2 -3&quot;
+  scale=&quot;1.5 1.5 1.5&quot;&gt;
+&lt;/a-entity&gt;
+</code></pre></div></a-scene></a-scene></a-scene></head></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.db1f5619.js" defer></script><script src="/assets/js/2.136755fd.js" defer></script><script src="/assets/js/73.935f8492.js" defer></script>
+  </body>
+</html>

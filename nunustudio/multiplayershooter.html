@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>多人射击游戏 | aiplayer</title>
+    <meta name="description" content="aiplayer portal">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.f0b62ee8.css" as="style"><link rel="preload" href="/assets/js/app.db1f5619.js" as="script"><link rel="preload" href="/assets/js/2.136755fd.js" as="script"><link rel="preload" href="/assets/js/126.27d517fd.js" as="script"><link rel="prefetch" href="/assets/js/10.d8e1a177.js"><link rel="prefetch" href="/assets/js/100.a1569435.js"><link rel="prefetch" href="/assets/js/101.df4254c0.js"><link rel="prefetch" href="/assets/js/102.7238a621.js"><link rel="prefetch" href="/assets/js/103.6066a045.js"><link rel="prefetch" href="/assets/js/104.19e5f9ce.js"><link rel="prefetch" href="/assets/js/105.1da234c6.js"><link rel="prefetch" href="/assets/js/106.205e3402.js"><link rel="prefetch" href="/assets/js/107.175ad760.js"><link rel="prefetch" href="/assets/js/108.a9ac042b.js"><link rel="prefetch" href="/assets/js/109.424d5783.js"><link rel="prefetch" href="/assets/js/11.934355de.js"><link rel="prefetch" href="/assets/js/110.c7bca671.js"><link rel="prefetch" href="/assets/js/111.73c2c60a.js"><link rel="prefetch" href="/assets/js/112.7f5490ea.js"><link rel="prefetch" href="/assets/js/113.14375c6f.js"><link rel="prefetch" href="/assets/js/114.3363197a.js"><link rel="prefetch" href="/assets/js/115.02afb483.js"><link rel="prefetch" href="/assets/js/116.29a7b694.js"><link rel="prefetch" href="/assets/js/117.5be07a33.js"><link rel="prefetch" href="/assets/js/118.0702142c.js"><link rel="prefetch" href="/assets/js/119.6402e457.js"><link rel="prefetch" href="/assets/js/12.c2bc3227.js"><link rel="prefetch" href="/assets/js/120.ac365fc7.js"><link rel="prefetch" href="/assets/js/121.fb021e50.js"><link rel="prefetch" href="/assets/js/122.9fe3b1ea.js"><link rel="prefetch" href="/assets/js/123.27e74ba8.js"><link rel="prefetch" href="/assets/js/124.1d2e32db.js"><link rel="prefetch" href="/assets/js/125.04e7f173.js"><link rel="prefetch" href="/assets/js/127.64ce51be.js"><link rel="prefetch" href="/assets/js/128.5c40af31.js"><link rel="prefetch" href="/assets/js/129.8e36099a.js"><link rel="prefetch" href="/assets/js/13.30b2fd23.js"><link rel="prefetch" href="/assets/js/130.4404aeed.js"><link rel="prefetch" href="/assets/js/131.9a6be204.js"><link rel="prefetch" href="/assets/js/132.621634ca.js"><link rel="prefetch" href="/assets/js/133.4b393036.js"><link rel="prefetch" href="/assets/js/134.dcc9e5f3.js"><link rel="prefetch" href="/assets/js/135.cdc08eed.js"><link rel="prefetch" href="/assets/js/136.d1361c7f.js"><link rel="prefetch" href="/assets/js/137.70e249cd.js"><link rel="prefetch" href="/assets/js/138.ab5deb19.js"><link rel="prefetch" href="/assets/js/139.11778cf5.js"><link rel="prefetch" href="/assets/js/14.2125223a.js"><link rel="prefetch" href="/assets/js/140.db04184d.js"><link rel="prefetch" href="/assets/js/141.f31f6358.js"><link rel="prefetch" href="/assets/js/142.46e9b5b9.js"><link rel="prefetch" href="/assets/js/143.fa46c1c3.js"><link rel="prefetch" href="/assets/js/144.578e8fe1.js"><link rel="prefetch" href="/assets/js/145.d92b6019.js"><link rel="prefetch" href="/assets/js/146.7959a0f8.js"><link rel="prefetch" href="/assets/js/147.bddc1b3f.js"><link rel="prefetch" href="/assets/js/148.226bfada.js"><link rel="prefetch" href="/assets/js/149.d8549551.js"><link rel="prefetch" href="/assets/js/15.fb8b9ae9.js"><link rel="prefetch" href="/assets/js/150.9e86241e.js"><link rel="prefetch" href="/assets/js/151.796f1274.js"><link rel="prefetch" href="/assets/js/152.d257e8a9.js"><link rel="prefetch" href="/assets/js/153.03854e57.js"><link rel="prefetch" href="/assets/js/154.36494ed7.js"><link rel="prefetch" href="/assets/js/155.a4c0d865.js"><link rel="prefetch" href="/assets/js/156.a5570edb.js"><link rel="prefetch" href="/assets/js/157.d5cfe341.js"><link rel="prefetch" href="/assets/js/16.4840c375.js"><link rel="prefetch" href="/assets/js/17.3db7187c.js"><link rel="prefetch" href="/assets/js/18.3f978365.js"><link rel="prefetch" href="/assets/js/19.0a024717.js"><link rel="prefetch" href="/assets/js/20.8bce2b97.js"><link rel="prefetch" href="/assets/js/21.eb505a2a.js"><link rel="prefetch" href="/assets/js/22.ad76dfcb.js"><link rel="prefetch" href="/assets/js/23.c086b548.js"><link rel="prefetch" href="/assets/js/24.3fb5d63e.js"><link rel="prefetch" href="/assets/js/25.5595455f.js"><link rel="prefetch" href="/assets/js/26.f94f11ad.js"><link rel="prefetch" href="/assets/js/27.f289b5d4.js"><link rel="prefetch" href="/assets/js/28.6eb0556e.js"><link rel="prefetch" href="/assets/js/29.8defe1c0.js"><link rel="prefetch" href="/assets/js/3.28f81bc4.js"><link rel="prefetch" href="/assets/js/30.8ab8f249.js"><link rel="prefetch" href="/assets/js/31.33b536a9.js"><link rel="prefetch" href="/assets/js/32.7df14067.js"><link rel="prefetch" href="/assets/js/33.fbabe129.js"><link rel="prefetch" href="/assets/js/34.53ff114a.js"><link rel="prefetch" href="/assets/js/35.f2c39ebd.js"><link rel="prefetch" href="/assets/js/36.467f6b09.js"><link rel="prefetch" href="/assets/js/37.9e1dd23b.js"><link rel="prefetch" href="/assets/js/38.068c85f4.js"><link rel="prefetch" href="/assets/js/39.b1e0fefa.js"><link rel="prefetch" href="/assets/js/4.8934782b.js"><link rel="prefetch" href="/assets/js/40.bb170fba.js"><link rel="prefetch" href="/assets/js/41.f3ae6a10.js"><link rel="prefetch" href="/assets/js/42.bb54411b.js"><link rel="prefetch" href="/assets/js/43.3c863cb9.js"><link rel="prefetch" href="/assets/js/44.7060ca63.js"><link rel="prefetch" href="/assets/js/45.f3047d76.js"><link rel="prefetch" href="/assets/js/46.9c09c0ab.js"><link rel="prefetch" href="/assets/js/47.5202a7c1.js"><link rel="prefetch" href="/assets/js/48.6e8df322.js"><link rel="prefetch" href="/assets/js/49.0cc3d23d.js"><link rel="prefetch" href="/assets/js/5.a0353814.js"><link rel="prefetch" href="/assets/js/50.3b307fd5.js"><link rel="prefetch" href="/assets/js/51.4fbbe6c7.js"><link rel="prefetch" href="/assets/js/52.331937fe.js"><link rel="prefetch" href="/assets/js/53.dc7c275c.js"><link rel="prefetch" href="/assets/js/54.4f85d82e.js"><link rel="prefetch" href="/assets/js/55.1643757b.js"><link rel="prefetch" href="/assets/js/56.ef32a88b.js"><link rel="prefetch" href="/assets/js/57.c7121932.js"><link rel="prefetch" href="/assets/js/58.16441501.js"><link rel="prefetch" href="/assets/js/59.4e5591f5.js"><link rel="prefetch" href="/assets/js/6.fa571ebd.js"><link rel="prefetch" href="/assets/js/60.967020e8.js"><link rel="prefetch" href="/assets/js/61.71d79f42.js"><link rel="prefetch" href="/assets/js/62.88671447.js"><link rel="prefetch" href="/assets/js/63.7f40e91d.js"><link rel="prefetch" href="/assets/js/64.ef23913e.js"><link rel="prefetch" href="/assets/js/65.63a29bbb.js"><link rel="prefetch" href="/assets/js/66.9f830dea.js"><link rel="prefetch" href="/assets/js/67.0783e6f9.js"><link rel="prefetch" href="/assets/js/68.edb28c91.js"><link rel="prefetch" href="/assets/js/69.58a85f29.js"><link rel="prefetch" href="/assets/js/7.b690ca65.js"><link rel="prefetch" href="/assets/js/70.58d4adb6.js"><link rel="prefetch" href="/assets/js/71.0e2e4dba.js"><link rel="prefetch" href="/assets/js/72.ee7e2979.js"><link rel="prefetch" href="/assets/js/73.935f8492.js"><link rel="prefetch" href="/assets/js/74.d69c06e4.js"><link rel="prefetch" href="/assets/js/75.8afa1dc5.js"><link rel="prefetch" href="/assets/js/76.48c0a6d0.js"><link rel="prefetch" href="/assets/js/77.5e0afc33.js"><link rel="prefetch" href="/assets/js/78.9cb7dc28.js"><link rel="prefetch" href="/assets/js/79.83ec5e2e.js"><link rel="prefetch" href="/assets/js/8.f127e12e.js"><link rel="prefetch" href="/assets/js/80.3776af5c.js"><link rel="prefetch" href="/assets/js/81.539223a8.js"><link rel="prefetch" href="/assets/js/82.ecd88fed.js"><link rel="prefetch" href="/assets/js/83.8b8f52b1.js"><link rel="prefetch" href="/assets/js/84.56e7b62b.js"><link rel="prefetch" href="/assets/js/85.602daf28.js"><link rel="prefetch" href="/assets/js/86.8983b155.js"><link rel="prefetch" href="/assets/js/87.92548279.js"><link rel="prefetch" href="/assets/js/88.1683e878.js"><link rel="prefetch" href="/assets/js/89.57d67dae.js"><link rel="prefetch" href="/assets/js/9.beeca559.js"><link rel="prefetch" href="/assets/js/90.86c4ccad.js"><link rel="prefetch" href="/assets/js/91.b97628b5.js"><link rel="prefetch" href="/assets/js/92.13b4c677.js"><link rel="prefetch" href="/assets/js/93.91e9ad39.js"><link rel="prefetch" href="/assets/js/94.bfd2d19e.js"><link rel="prefetch" href="/assets/js/95.89405747.js"><link rel="prefetch" href="/assets/js/96.de120589.js"><link rel="prefetch" href="/assets/js/97.72fa8b0f.js"><link rel="prefetch" href="/assets/js/98.debed4eb.js"><link rel="prefetch" href="/assets/js/99.992e6d93.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f0b62ee8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">aiplayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link router-link-active">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link router-link-active">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nunustudio/" class="sidebar-link">简介</a></li><li><a href="/nunustudio/basics.html" class="sidebar-link">编辑器基础</a></li><li><a href="/nunustudio/firstscript.html" class="sidebar-link">第一个脚本</a></li><li><a href="/nunustudio/camera.html" class="sidebar-link">摄影机</a></li><li><a href="/nunustudio/material.html" class="sidebar-link">用料</a></li><li><a href="/nunustudio/particle.html" class="sidebar-link">粒子</a></li><li><a href="/nunustudio/audio.html" class="sidebar-link">音频</a></li><li><a href="/nunustudio/text.html" class="sidebar-link">文本</a></li><li><a href="/nunustudio/physical.html" class="sidebar-link">物理</a></li><li><a href="/nunustudio/gyroscope.html" class="sidebar-link">陀螺仪</a></li><li><a href="/nunustudio/vr.html" class="sidebar-link">虚拟现实</a></li><li><a href="/nunustudio/raycasting.html" class="sidebar-link">光线投射</a></li><li><a href="/nunustudio/animation.html" class="sidebar-link">动画</a></li><li><a href="/nunustudio/water.html" class="sidebar-link">水</a></li><li><a href="/nunustudio/joystick.html" class="sidebar-link">游戏杆</a></li><li><a href="/nunustudio/timeline.html" class="sidebar-link">时间线</a></li><li><a href="/nunustudio/postprocessing.html" class="sidebar-link">后期处理</a></li><li><a href="/nunustudio/video.html" class="sidebar-link">视频</a></li><li><a href="/nunustudio/shader.html" class="sidebar-link">着色器</a></li><li><a href="/nunustudio/terrain.html" class="sidebar-link">地形</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>完成例子</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nunustudio/platformergame.html" class="sidebar-link">平台游戏</a></li><li><a href="/nunustudio/multiplayershooter.html" class="active sidebar-link">多人射击游戏</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>集成</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nunustudio/embedding.html" class="sidebar-link">嵌入</a></li><li><a href="/nunustudio/communication.html" class="sidebar-link">通讯</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="多人射击游戏"><a href="#多人射击游戏" class="header-anchor">#</a> 多人射击游戏</h1> <p>在本教程中，我们将使用WebSockets进行网络体验，并将创建一个简单的网络多人游戏。对于本教程，将使用node.js来开发服务器应用程序。我决定使用node.js只是因为它使用了nunuStudio中使用的相同语言（javascript），但是您可以选择其他框架/语言来实现服务器。</p> <p>让我们先介绍一下WebSockets的基础知识，它们的基本概念以及如何使用它们来创建基于Web的多人游戏，websockets是一项技术，它使使用它们打开用户浏览器和服务器之间的交互式通信会话成为可能。可以将消息发送到服务器并接收事件驱动的响应，而不必轮询服务器以获取答复。</p> <p>单个websocket服务器可用于互连多个客户端，该服务器充当数据交换的中介，以消息聊天为例，每个客户端连接到服务器，并在发送消息时告诉服务器他是谁。客户端告诉服务器消息的目的地，然后服务器将该消息重定向到其目的地，也就是连接到服务器的客户端。</p> <p><img src="/nunustudio/video/chat.png" alt="alt text"></p> <p>让我们从安装本教程所需的nodejs依赖关系开始，我们只需要websocket依赖关系使用下面的命令就可以使用您的计算机终端/命令来安装它。</p> <div class="language- extra-class"><pre class="language-text"><code>npm -g install websocket
+</code></pre></div><p>要设置服务器代码，我们将首先导入所需的节点模块，然后创建一个http服务器实例并使用正确的端口（可以使用我们想要的任何端口）进行配置，然后创建一个WebSocketServer允许我们向连接到服务器的客户端发送和接收消息。在本教程中，为方便起见，我们将仅使用JSON消息，但我们可以发送任何类型的数据。</p> <p>下面的代码将用作我们服务器的基础，它将处理与客户端建立连接所需的所有步骤，从现在开始，我们将仅专注于消息交换。对于本教程，我们将使用端口1111和本地主机进行通信，请确保将其更改为正确的IP，并在使用外部服务器时配置端口访问。</p> <div class="language- extra-class"><pre class="language-text"><code>var WebSocketServer = require(&quot;websocket&quot;).server;
+var http = require(&quot;http&quot;);
+
+var port = 1111;
+
+var server = http.createServer();
+server.listen(port);
+
+console.log(&quot;Server running at port &quot; + port);
+
+var wsServer = new WebSocketServer({httpServer: server});
+wsServer.on(&quot;request&quot;, function(request)
+{
+	var connection = request.accept(null, request.origin);
+
+	connection.on(&quot;message&quot;, function(message)
+	{
+		//Message handling code here
+	});
+	
+	connection.on(&quot;close&quot;, function(connection)
+	{
+		//User disconnected code here
+	});
+});
+</code></pre></div><p>下面的代码是我们将在nunuStudio中编写的客户端部分，因为我们可以看到连接到WebSocket的代码非常简单，实际上类似于用于创建服务器本身的代码，在nunuStudio中启动客户端部分时，您应该能够在控制台中看到“已连接到服务器”消息。</p> <div class="language- extra-class"><pre class="language-text"><code>var connection, connected = false;
+
+function initialize()
+{	
+	connection = new WebSocket(&quot;ws://127.0.0.1:1337&quot;);
+	
+	connection.onopen = function()
+	{
+		connected = true;
+		console.log(&quot;Connected to server&quot;);
+	};
+}
+</code></pre></div><p>现在让我们向服务器发送一条简单的消息并为我们发送的消息创建响应，我们将在每条发送的消息中包含一个类型值（允许服务器区分消息）和一个uuid（允许服务器区分客户端）。要发送消息，我们将使用WebSocket send方法，所有消息都将进行JSON编码，因此我们必须在客户端上调用JSON.stringify将对象转换为文本格式，然后调用JSON.parse在服务器上重新创建对象。</p> <p>下面的代码是客户端。</p> <div class="language- extra-class"><pre class="language-text"><code>uuid = THREE.Math.generateUUID();
+...
+connection.onopen = function()
+{
+	console.log(&quot;Connected to server&quot;);
+	connection.send(JSON.stringify(
+	{
+		type:&quot;connected&quot;,
+		uuid:uuid
+	}));
+};
+</code></pre></div><p>下面的代码是服务器端。</p> <div class="language- extra-class"><pre class="language-text"><code>connection.on(&quot;message&quot;, function(message)
+{
+	console.log(&quot;Message received&quot;);
+	var data = JSON.parse(message.utf8Data);
+});
+</code></pre></div><p>如果一切正常，我们现在应该能够在客户端和服务器之间交换消息，我们可以使用nunuStudio提供的序列化方法在多个客户端之间发送和更新场景中对象的状态。</p> <p>现在让我们开始创建关卡，让我们从最好在定义位置开始的几对墙开始，在我的情况下，我已将墙精确地放置在X轴上的位置20和Z轴上的位置12，知道壁位置将对以后有所帮助用于手动碰撞检查。</p> <p><img src="/nunustudio/video/level.jpg" alt="alt text"></p> <p>创建关卡后，让我们现在创建播放器，我仅使用一个多维数据集开始，并对播放器的运动进行了编程，当按下鼠标按钮时，播放器将使用WASD键移动并始终沿鼠标方向旋转。玩家将发射子弹。</p> <p>为了使玩家始终查看鼠标的位置，我们需要获取鼠标指向的世界坐标，为此，我们可以使用场景中可用的射线投射器对象，并使用它来检查鼠标与地面对象的交集。</p> <p>下面的代码实现了所有播放器的初始化和移动。播放器状态更新后，“更新”消息将发送到服务器，当服务器收到此消息时，它将重新分配给所有其他客户端，以便它们可以更新远程播放器实例状态。</p> <div class="language- extra-class"><pre class="language-text"><code>function initialize()
+{		
+	//Player
+	player = scene.getObjectByName(&quot;player&quot;);
+	player.material.color.setHex(Math.random() * 0xFFFFFF);
+	player.uuid = THREE.Math.generateUUID();
+	player.canFire = true;
+	player.alive = true;
+	
+	//Ground
+	ground = scene.getObjectByName(&quot;ground&quot;);
+
+	//Clock
+	clock = new Clock();
+	clock.start();
+
+	...
+}
+
+function update()
+{
+	var delta = clock.getDelta();
+
+	if(connected)
+	{
+		if(player.alive)
+		{
+			//Move player
+			var speed = delta * 10;
+			if(Keyboard.keyPressed(Keyboard.W)) player.position.z -= speed;
+			if(Keyboard.keyPressed(Keyboard.S)) player.position.z += speed;
+			if(Keyboard.keyPressed(Keyboard.A)) player.position.x -= speed;
+			if(Keyboard.keyPressed(Keyboard.D)) player.position.x += speed;
+
+			//Limit player movement
+			if(player.position.x &gt; 19) player.position.x = 19;
+			if(player.position.x &lt; -19) player.position.x = -19;
+			if(player.position.z &gt; 11) player.position.z = 11;
+			if(player.position.z &lt; -11) player.position.z = -11;			
+
+			//Mouse rotation
+			var intersect = scene.raycaster.intersectObject(ground);
+			if(intersect.length &gt; 0)
+			{
+				var point = intersect[0].point;
+				point.y = player.position.y;
+				player.lookAt(point);
+
+				//Fire bullet
+				if(player.canFire &amp;&amp; Mouse.buttonJustPressed(Mouse.LEFT))
+				{
+					//TODO Create bullet
+
+					player.canFire = false;
+					setTimeout(function()
+					{
+						player.canFire = true;
+					}, 500);
+				}
+			}
+		}
+	}
+}
+</code></pre></div><p>如果您愿意，可以自定义播放器以使其外观更好一些，我给我添加了两只眼睛，并用一根棍子将其作为武器。</p> <p><img src="/nunustudio/video/player.jpg" alt="alt text"></p> <p>现在，让我们同步多个客户端之间的位置，让我们创建一个简单的数据结构以将Players存储在我们的服务器和客户端中。下面的代码实现了服务器中所需的基本数据结构，服务器会将播放器和连接存储在列表中，并将播放器状态重新分配给服务器中的所有其他播放器。</p> <div class="language- extra-class"><pre class="language-text"><code>var players = [], clients = [];
+
+function Player(uuid, color)
+{
+	this.uuid = uuid;
+	this.color = color;
+	this.position = null;
+	this.rotation = null;
+}
+
+function Client(uuid, connection)
+{
+	this.uuid = uuid;
+	this.connection = connection;
+}
+</code></pre></div><p>当播放器连接到服务器时，它需要发送“连接”消息，其中包含有关播放器的初始数据，例如其UUID和用于表示世界的颜色。服务器收到此消息后，会将播放器添加到播放器和连接数组。当玩家更新其状态时，将发送“更新”消息，该消息包含玩家的实际位置和旋转，并且当其断开连接或死去时，将发送“断开连接”消息。</p> <p>当客户端从服务器接收到“更新”消息（服务器仅重新分发这些消息）时，客户端需要检查是否知道播放器，如果是这样的话，其位置和旋转将被更新，否则将使用消息中指示的颜色和uuid，当收到“断开连接”消息时，指示的播放器被销毁。</p> <p>下面的代码是客户端部分，其中包含从游戏中添加，更新和删除玩家所需的所有代码。</p> <div class="language- extra-class"><pre class="language-text"><code>var players = [];
+
+function initialize()
+{	
+	...
+
+	websocket.onopen = function()
+	{
+		websocket.send(JSON.stringify(
+		{
+			type: &quot;connected&quot;,
+			uuid: player.uuid,
+			color: player.material.color.getHex()
+		}));
+		...
+	};
+	
+	websocket.onmessage = function(message)
+	{
+		var data = JSON.parse(message.data);
+		
+		if(data.type === &quot;update&quot;)
+		{	
+			var uuid = data.uuid;
+
+			if(data.uuid !== player.uuid)
+			{
+				var object = players[data.uuid];
+
+				if(object === undefined)
+				{
+					var material = new MeshPhongMaterial({color: data.color});
+					var object = player.clone();
+					object.material = material;
+					object.uuid = data.uuid;
+					object.color = data.color;
+					scene.add(object);
+					players[uuid] = object;
+				}
+
+				object.position.fromArray(data.position);
+				object.rotation.fromArray(data.rotation);
+			}
+		}
+		else if(data.type === &quot;disconnect&quot;)
+		{
+			if(players[data.uuid] !== undefined)
+			{
+				players[data.uuid].destroy();
+				delete players[data.uuid];
+			}
+		}
+	};
+}
+
+function update()
+{
+	...
+
+	if(connected)
+	{
+		...
+
+		//Update message
+		websocket.send(JSON.stringify(
+		{
+			type: &quot;update&quot;,
+			uuid: player.uuid,
+			position: player.position.toArray(),
+			rotation: player.rotation.toArray()
+		}));
+	}
+}
+</code></pre></div><p>下面的代码是服务器部分，对于服务器，维护两个阵列，一个与连接，一个与播放器。</p> <div class="language- extra-class"><pre class="language-text"><code>server.on(&quot;request&quot;, function(request)
+{
+	var connection = request.accept(null, request.origin);
+
+	//Message
+	connection.on(&quot;message&quot;, function(message)
+	{
+		var data = JSON.parse(message.utf8Data);
+		
+		//Connected
+		if(data.type === &quot;connected&quot;)
+		{
+			players.push(new Player(data.uuid, data.color));
+			clients.push(new Client(data.uuid, connection));
+
+			console.log(&quot;Player &quot; + data.uuid + &quot; connected&quot;);
+		}
+		//Update
+		else if(data.type === &quot;update&quot;)
+		{
+			var player = getPlayer(data.uuid);
+
+			if(player !== null)
+			{
+				player.position = data.position;
+				player.rotation = data.rotation;
+			}
+
+			for(var i = 0; i &lt; clients.length; i++)
+			{
+				clients[i].connection.sendUTF(message.utf8Data);
+			}				
+		}
+		//Disconnected
+		else if(data.type === &quot;disconnect&quot;)
+		{
+			removePlayer(data.uuid);
+
+			for(var i = 0; i &lt; clients.length; i++)
+			{
+				clients[i].connection.sendUTF(message.utf8Data);
+			}
+
+			console.log(&quot;Player &quot; + data.uuid + &quot; disconnected&quot;);
+		}
+	});
+}
+</code></pre></div><p>如果一切正常，您应该能够将多个客户端连接到服务器并看到它们四处移动，要测试多个客户端，您可以导出项目的Web版本并在所选的浏览器中打开。</p> <p><img src="/nunustudio/video/connected.png" alt="alt text"></p> <p>我们快完成了，只需要添加项目符号，我们就可以为项目符号做准备了，我们将做一些类似于玩家动作的操作，但是不是让发送它的客户更新项目符号位置，而是每个客户都会更新项目符号位置，并且在本地检查冲突，这应允许减少通过服务器传输的数据量。</p> <p>下面的代码实现了项目符号的创建和更新，所有项目符号存储在一个数组中并每帧更新一次，当玩家射击项目符号时，“项目符号”消息发送到服务器并重新分配给所有客户端。如果子弹击中了玩家，则玩家死亡，并且“断开连接”消息发送到服务器。</p> <div class="language- extra-class"><pre class="language-text"><code>function update()
+{
+	...
+
+	{
+		...
+		{
+			...
+			//Mouse rotation
+			var intersect = scene.raycaster.intersectObject(ground);
+			if(intersect.length &gt; 0)
+			{
+				var point = intersect[0].point;
+				point.y = player.position.y;
+				player.lookAt(point);
+
+				//Fire bullet
+				if(player.canFire &amp;&amp; Mouse.buttonJustPressed(Mouse.LEFT))
+				{
+					var bullet = new Mesh(bulletGeometry, bulletMaterial);
+					bullet.owner = player.uuid;
+					bullet.velocity = point;
+					bullet.velocity.sub(player.position);
+					bullet.velocity.normalize();
+					bullet.velocity.multiplyScalar(20);
+					bullet.position.copy(player.position);
+					bullets.push(bullet);
+					scene.add(bullet);
+
+					player.canFire = false;
+					setTimeout(function()
+					{
+						player.canFire = true;
+					}, 500);
+					
+					websocket.send(JSON.stringify(
+					{
+						type: &quot;bullet&quot;,
+						uuid: player.uuid,
+						position: bullet.position.toArray(),
+						velocity: bullet.velocity.toArray()
+					}));
+				}
+			}
+		}
+		
+		//Update bullets
+		for(var i = 0; i &lt; bullets.length; i++)
+		{
+			var bullet = bullets[i];
+
+			bullet.position.x += bullet.velocity.x * delta;
+			bullet.position.y += bullet.velocity.y * delta;
+			bullet.position.z += bullet.velocity.z * delta;
+
+			//Check bullet out of arena
+			if(bullet.position.x &gt; 20 || bullet.position.x &lt; -20 || bullet.position.z &gt; 12 || bullet.position.z &lt; -12)
+			{
+				bullet.destroy();
+				bullets.splice(i, 1);
+				continue;
+			}
+
+			//Check collision with players
+			if(bullet.owner !== player.uuid &amp;&amp; bullet.position.distanceTo(player.position) &lt; 0.8)
+			{
+				bullet.destroy();
+				bullets.splice(i, 1);
+				
+				player.destroy();
+				player.alive = false;
+
+				websocket.send(JSON.stringify(
+				{
+					type: &quot;disconnect&quot;,
+					uuid: player.uuid
+				}));
+				break;
+			}
+		}
+
+		...
+	}	
+}
+</code></pre></div><p>在服务器端，“项目符号”消息仅分发给所有连接的客户端。</p> <div class="language- extra-class"><pre class="language-text"><code>connection.on(&quot;message&quot;, function(message)
+{
+	...
+	else if(data.type === &quot;bullet&quot;)
+	{
+		for(var i = 0; i &lt; clients.length; i++)
+		{
+			clients[i].connection.sendUTF(message.utf8Data);
+		}
+
+		console.log(&quot;Player &quot; + data.uuid + &quot; fired bullet!&quot;);
+	}
+	...
+}
+</code></pre></div><p>现在，游戏已经准备好了，我们只需要添加一些代码，以确保当用户关闭窗口时客户端发送断开连接的消息，这可以通过向脚本添加dispose函数来轻松完成。当应用程序终止时，将自动调用处理消息。</p> <div class="language- extra-class"><pre class="language-text"><code>function dispose()
+{
+	websocket.send(JSON.stringify(
+	{
+		type: &quot;disconnect&quot;,
+		uuid: player.uuid
+	}));
+	
+	websocket.close();
+}
+</code></pre></div><p>如果可以按照所有步骤进行操作，则本教程中说明的使用websockets进行消息交换的机制可以轻松地适用于其他类型的应用程序，并且可以在nunuStudio之外使用。</p> <p>希望本教程对您有所帮助，您可以在此处下载项目文件。如有任何问题，请随时给我发送电子邮件或在GitHub中打开问题。</p> <p><img src="/nunustudio/video/game.jpg" alt="alt text"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nunustudio/platformergame.html" class="prev">
+        平台游戏
+      </a></span> <span class="next"><a href="/nunustudio/embedding.html">
+        嵌入
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.db1f5619.js" defer></script><script src="/assets/js/2.136755fd.js" defer></script><script src="/assets/js/126.27d517fd.js" defer></script>
+  </body>
+</html>

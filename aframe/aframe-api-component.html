@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件 | aiplayer</title>
+    <meta name="description" content="aiplayer portal">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.f0b62ee8.css" as="style"><link rel="preload" href="/assets/js/app.db1f5619.js" as="script"><link rel="preload" href="/assets/js/2.136755fd.js" as="script"><link rel="preload" href="/assets/js/11.934355de.js" as="script"><link rel="prefetch" href="/assets/js/10.d8e1a177.js"><link rel="prefetch" href="/assets/js/100.a1569435.js"><link rel="prefetch" href="/assets/js/101.df4254c0.js"><link rel="prefetch" href="/assets/js/102.7238a621.js"><link rel="prefetch" href="/assets/js/103.6066a045.js"><link rel="prefetch" href="/assets/js/104.19e5f9ce.js"><link rel="prefetch" href="/assets/js/105.1da234c6.js"><link rel="prefetch" href="/assets/js/106.205e3402.js"><link rel="prefetch" href="/assets/js/107.175ad760.js"><link rel="prefetch" href="/assets/js/108.a9ac042b.js"><link rel="prefetch" href="/assets/js/109.424d5783.js"><link rel="prefetch" href="/assets/js/110.c7bca671.js"><link rel="prefetch" href="/assets/js/111.73c2c60a.js"><link rel="prefetch" href="/assets/js/112.7f5490ea.js"><link rel="prefetch" href="/assets/js/113.14375c6f.js"><link rel="prefetch" href="/assets/js/114.3363197a.js"><link rel="prefetch" href="/assets/js/115.02afb483.js"><link rel="prefetch" href="/assets/js/116.29a7b694.js"><link rel="prefetch" href="/assets/js/117.5be07a33.js"><link rel="prefetch" href="/assets/js/118.0702142c.js"><link rel="prefetch" href="/assets/js/119.6402e457.js"><link rel="prefetch" href="/assets/js/12.c2bc3227.js"><link rel="prefetch" href="/assets/js/120.ac365fc7.js"><link rel="prefetch" href="/assets/js/121.fb021e50.js"><link rel="prefetch" href="/assets/js/122.9fe3b1ea.js"><link rel="prefetch" href="/assets/js/123.27e74ba8.js"><link rel="prefetch" href="/assets/js/124.1d2e32db.js"><link rel="prefetch" href="/assets/js/125.04e7f173.js"><link rel="prefetch" href="/assets/js/126.27d517fd.js"><link rel="prefetch" href="/assets/js/127.64ce51be.js"><link rel="prefetch" href="/assets/js/128.5c40af31.js"><link rel="prefetch" href="/assets/js/129.8e36099a.js"><link rel="prefetch" href="/assets/js/13.30b2fd23.js"><link rel="prefetch" href="/assets/js/130.4404aeed.js"><link rel="prefetch" href="/assets/js/131.9a6be204.js"><link rel="prefetch" href="/assets/js/132.621634ca.js"><link rel="prefetch" href="/assets/js/133.4b393036.js"><link rel="prefetch" href="/assets/js/134.dcc9e5f3.js"><link rel="prefetch" href="/assets/js/135.cdc08eed.js"><link rel="prefetch" href="/assets/js/136.d1361c7f.js"><link rel="prefetch" href="/assets/js/137.70e249cd.js"><link rel="prefetch" href="/assets/js/138.ab5deb19.js"><link rel="prefetch" href="/assets/js/139.11778cf5.js"><link rel="prefetch" href="/assets/js/14.2125223a.js"><link rel="prefetch" href="/assets/js/140.db04184d.js"><link rel="prefetch" href="/assets/js/141.f31f6358.js"><link rel="prefetch" href="/assets/js/142.46e9b5b9.js"><link rel="prefetch" href="/assets/js/143.fa46c1c3.js"><link rel="prefetch" href="/assets/js/144.578e8fe1.js"><link rel="prefetch" href="/assets/js/145.d92b6019.js"><link rel="prefetch" href="/assets/js/146.7959a0f8.js"><link rel="prefetch" href="/assets/js/147.bddc1b3f.js"><link rel="prefetch" href="/assets/js/148.226bfada.js"><link rel="prefetch" href="/assets/js/149.d8549551.js"><link rel="prefetch" href="/assets/js/15.fb8b9ae9.js"><link rel="prefetch" href="/assets/js/150.9e86241e.js"><link rel="prefetch" href="/assets/js/151.796f1274.js"><link rel="prefetch" href="/assets/js/152.d257e8a9.js"><link rel="prefetch" href="/assets/js/153.03854e57.js"><link rel="prefetch" href="/assets/js/154.36494ed7.js"><link rel="prefetch" href="/assets/js/155.a4c0d865.js"><link rel="prefetch" href="/assets/js/156.a5570edb.js"><link rel="prefetch" href="/assets/js/157.d5cfe341.js"><link rel="prefetch" href="/assets/js/16.4840c375.js"><link rel="prefetch" href="/assets/js/17.3db7187c.js"><link rel="prefetch" href="/assets/js/18.3f978365.js"><link rel="prefetch" href="/assets/js/19.0a024717.js"><link rel="prefetch" href="/assets/js/20.8bce2b97.js"><link rel="prefetch" href="/assets/js/21.eb505a2a.js"><link rel="prefetch" href="/assets/js/22.ad76dfcb.js"><link rel="prefetch" href="/assets/js/23.c086b548.js"><link rel="prefetch" href="/assets/js/24.3fb5d63e.js"><link rel="prefetch" href="/assets/js/25.5595455f.js"><link rel="prefetch" href="/assets/js/26.f94f11ad.js"><link rel="prefetch" href="/assets/js/27.f289b5d4.js"><link rel="prefetch" href="/assets/js/28.6eb0556e.js"><link rel="prefetch" href="/assets/js/29.8defe1c0.js"><link rel="prefetch" href="/assets/js/3.28f81bc4.js"><link rel="prefetch" href="/assets/js/30.8ab8f249.js"><link rel="prefetch" href="/assets/js/31.33b536a9.js"><link rel="prefetch" href="/assets/js/32.7df14067.js"><link rel="prefetch" href="/assets/js/33.fbabe129.js"><link rel="prefetch" href="/assets/js/34.53ff114a.js"><link rel="prefetch" href="/assets/js/35.f2c39ebd.js"><link rel="prefetch" href="/assets/js/36.467f6b09.js"><link rel="prefetch" href="/assets/js/37.9e1dd23b.js"><link rel="prefetch" href="/assets/js/38.068c85f4.js"><link rel="prefetch" href="/assets/js/39.b1e0fefa.js"><link rel="prefetch" href="/assets/js/4.8934782b.js"><link rel="prefetch" href="/assets/js/40.bb170fba.js"><link rel="prefetch" href="/assets/js/41.f3ae6a10.js"><link rel="prefetch" href="/assets/js/42.bb54411b.js"><link rel="prefetch" href="/assets/js/43.3c863cb9.js"><link rel="prefetch" href="/assets/js/44.7060ca63.js"><link rel="prefetch" href="/assets/js/45.f3047d76.js"><link rel="prefetch" href="/assets/js/46.9c09c0ab.js"><link rel="prefetch" href="/assets/js/47.5202a7c1.js"><link rel="prefetch" href="/assets/js/48.6e8df322.js"><link rel="prefetch" href="/assets/js/49.0cc3d23d.js"><link rel="prefetch" href="/assets/js/5.a0353814.js"><link rel="prefetch" href="/assets/js/50.3b307fd5.js"><link rel="prefetch" href="/assets/js/51.4fbbe6c7.js"><link rel="prefetch" href="/assets/js/52.331937fe.js"><link rel="prefetch" href="/assets/js/53.dc7c275c.js"><link rel="prefetch" href="/assets/js/54.4f85d82e.js"><link rel="prefetch" href="/assets/js/55.1643757b.js"><link rel="prefetch" href="/assets/js/56.ef32a88b.js"><link rel="prefetch" href="/assets/js/57.c7121932.js"><link rel="prefetch" href="/assets/js/58.16441501.js"><link rel="prefetch" href="/assets/js/59.4e5591f5.js"><link rel="prefetch" href="/assets/js/6.fa571ebd.js"><link rel="prefetch" href="/assets/js/60.967020e8.js"><link rel="prefetch" href="/assets/js/61.71d79f42.js"><link rel="prefetch" href="/assets/js/62.88671447.js"><link rel="prefetch" href="/assets/js/63.7f40e91d.js"><link rel="prefetch" href="/assets/js/64.ef23913e.js"><link rel="prefetch" href="/assets/js/65.63a29bbb.js"><link rel="prefetch" href="/assets/js/66.9f830dea.js"><link rel="prefetch" href="/assets/js/67.0783e6f9.js"><link rel="prefetch" href="/assets/js/68.edb28c91.js"><link rel="prefetch" href="/assets/js/69.58a85f29.js"><link rel="prefetch" href="/assets/js/7.b690ca65.js"><link rel="prefetch" href="/assets/js/70.58d4adb6.js"><link rel="prefetch" href="/assets/js/71.0e2e4dba.js"><link rel="prefetch" href="/assets/js/72.ee7e2979.js"><link rel="prefetch" href="/assets/js/73.935f8492.js"><link rel="prefetch" href="/assets/js/74.d69c06e4.js"><link rel="prefetch" href="/assets/js/75.8afa1dc5.js"><link rel="prefetch" href="/assets/js/76.48c0a6d0.js"><link rel="prefetch" href="/assets/js/77.5e0afc33.js"><link rel="prefetch" href="/assets/js/78.9cb7dc28.js"><link rel="prefetch" href="/assets/js/79.83ec5e2e.js"><link rel="prefetch" href="/assets/js/8.f127e12e.js"><link rel="prefetch" href="/assets/js/80.3776af5c.js"><link rel="prefetch" href="/assets/js/81.539223a8.js"><link rel="prefetch" href="/assets/js/82.ecd88fed.js"><link rel="prefetch" href="/assets/js/83.8b8f52b1.js"><link rel="prefetch" href="/assets/js/84.56e7b62b.js"><link rel="prefetch" href="/assets/js/85.602daf28.js"><link rel="prefetch" href="/assets/js/86.8983b155.js"><link rel="prefetch" href="/assets/js/87.92548279.js"><link rel="prefetch" href="/assets/js/88.1683e878.js"><link rel="prefetch" href="/assets/js/89.57d67dae.js"><link rel="prefetch" href="/assets/js/9.beeca559.js"><link rel="prefetch" href="/assets/js/90.86c4ccad.js"><link rel="prefetch" href="/assets/js/91.b97628b5.js"><link rel="prefetch" href="/assets/js/92.13b4c677.js"><link rel="prefetch" href="/assets/js/93.91e9ad39.js"><link rel="prefetch" href="/assets/js/94.bfd2d19e.js"><link rel="prefetch" href="/assets/js/95.89405747.js"><link rel="prefetch" href="/assets/js/96.de120589.js"><link rel="prefetch" href="/assets/js/97.72fa8b0f.js"><link rel="prefetch" href="/assets/js/98.debed4eb.js"><link rel="prefetch" href="/assets/js/99.992e6d93.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f0b62ee8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">aiplayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link router-link-active">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/arjs/" class="nav-link">
+  AR.js
+</a></div><div class="nav-item"><a href="/aframe/" class="nav-link router-link-active">
+  aframe
+</a></div><div class="nav-item"><a href="/nunustudio/" class="nav-link">
+  nunuStudio
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/aiplayer/aiplayer.github.io.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Aiplayer
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>aframe</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/" class="sidebar-link">AFrame:构建VR应用框架</a></li><li><a href="/aframe/aframe-base.html" class="sidebar-link">AFrame基础</a></li><li><a href="/aframe/aframe-guide.html" class="sidebar-link">开发指南</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-api.html" class="sidebar-link">核心API</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-component.html" class="sidebar-link">组件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>原语</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/aframe/aframe-primitive.html" class="sidebar-link">AFrame基础控件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h1> <p>在实体组件系统模式中，组件是可重复使用的模块化数据块，我们将其插入实体中以添加外观，行为和/或功能。</p> <p>在A框架中，组件会修改场景中作为3D对象的实体。我们将组件混合在一起并组成复杂的对象。他们让我们将three.js和JavaScript代码封装到可以从HTML声明式使用的模块中。</p> <p>作为一个抽象的类比，如果我们将智能手机定义为实体，则可以使用组件赋予其外观（颜色，形状），定义其行为（调用时振动，低电量关闭）或添加功能（相机） ，屏幕）。</p> <p>组件大致类似于CSS。就像CSS规则如何修改元素的外观一样，组件属性也可以修改实体的外观，行为和功能。</p> <h2 id="组件html表单"><a href="#组件html表单" class="header-anchor">#</a> 组件HTML表单</h2> <p>组件以一个或多个组件属性的形式保存一桶数据。组件使用此数据来修改实体。考虑一个发动机 组件，我们可以定义诸如马力或汽缸的属性。</p> <p>HTML属性表示组件名称，这些属性的值表示组件数据。</p> <h3 id="单属性组件"><a href="#单属性组件" class="header-anchor">#</a> 单属性组件</h3> <p>如果组件是单属性组件，则意味着其数据由单个值组成，那么在HTML中，该组件值看起来像普通的HTML属性：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;！-`position`是位置组件的名称。-&gt; 
+&lt;！-`1 2 3`是位置分量的数据。-&gt; 
+&lt; a-entity  位置 = “ 1 2 3” &gt; &lt;/ a-entity &gt;
+</code></pre></div><h3 id="多功能组件"><a href="#多功能组件" class="header-anchor">#</a> 多功能组件</h3> <p>如果组件是多属性组件，则意味着数据由多个属性和值组成，那么在HTML中，组件值类似于内联CSS样式：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;！-`light`是灯光组件的名称。-&gt; 
+&lt;！-灯光的“类型”属性设置为“点”。-&gt; 
+&lt;！-灯光的“颜色”属性设置为“深红色”。-&gt; 
+&lt; a-entity  light = “类型：点；颜色：深红色” &gt; &lt;/ a-entity &gt;
+</code></pre></div><h2 id="注册组件"><a href="#注册组件" class="header-anchor">#</a> 注册组件</h2> <h3 id="aframe-registercomponent-name-definition"><a href="#aframe-registercomponent-name-definition" class="header-anchor">#</a> AFRAME.registerComponent (name, definition)</h3> <p>注册一个A框架组件。我们必须先注册组件，然后才能在中的任何位置使用它们<a-scene>。根据HTML文件的含义，组件应排在之前<a-scene>。</a-scene></a-scene></p> <ul><li>{string} name-组件名称。通过HTML属性名称表示的组件的公共API。</li> <li>{Object} definition-组件定义。包含架构和生命周期处理程序方法。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// Registering component in foo-component.js
+AFRAME.registerComponent('foo', {
+  schema: {},
+  init: function () {},
+  update: function () {},
+  tick: function () {},
+  remove: function () {},
+  pause: function () {},
+  play: function () {}
+});
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;!-- Usage of `foo` component. --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;aframe.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;foo-component.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+      &lt;a-entity foo&gt;&lt;/a-entity&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><h2 id="架构图"><a href="#架构图" class="header-anchor">#</a> 架构图</h2> <p>架构是一个对象，用于定义和描述组件的一个或多个属性。模式的键是属性的名称，模式的值定义属性的类型和值（如果是多属性组件）：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent('bar', {
+  schema: {
+    color: {default: '#FFF'},
+    size: {type: 'int', default: 5}
+  }
+}
+&lt; a-场景 &gt; &lt; a-实体栏 = “颜色：红色；大小：20” &gt; &lt;/ a-实体 &gt; &lt;/ a-场景 &gt;
+   
+</code></pre></div><p>道具形象 图片来自vrjump.de的Ruben Mueller</p> <h3 id="物业类型"><a href="#物业类型" class="header-anchor">#</a> 物业类型</h3> <p>属性类型主要定义架构如何解析每个属性从DOM传入的数据。然后，可以通过data 组件原型上的属性获得解析的数据。以下是A-Frame的内置属性类型：</p> <table><thead><tr><th>财产类型</th> <th>描述</th> <th>默认值</th></tr></thead> <tbody></tbody></table> <p>|数组	|将逗号分隔的值解析为数组（即&quot;1, 2, 3&quot; to ['1', '2', '3'])。	|[]|
+|资产	|用于指向一般资产的URL。可以解析出字符串形式的URL url(<url>)。如果值是元素ID选择器（例如#texture），则此属性类型将调用getElementById并getAttribute('src')返回URL。的asset属性类型可以或可以不改变到手柄XHR时或返回MediaElements直接（例如，<img>元素）。	|''|
+|音讯	|与asset属性类型相同的解析。A框架检查器可能会使用它来呈现音频资产。	|''|
+|布尔值	|将字符串解析为布尔值（即，解析&quot;false&quot;为false，其他所有内容为真）。	|假|
+|颜色	|目前不进行任何解析。主要由A框架检查器用来显示拾色器。另外，需要使用颜色类型才能使彩色动画正常工作。	|#FFF|
+|整型	|呼叫parseInt（例如&quot;124.5&quot;至124）。	|0|
+|地图	|与asset属性类型相同的解析。A框架检查器可能会使用它来显示纹理资产。	|''|
+|模型	|与asset属性类型相同的解析。A框架检查器可能会使用它来展示模型资产。	|''|
+|数	|呼叫parseFloat（例如&quot;124.5&quot;至124.5'）。	|0|
+|选择器	|呼叫querySelector（例如&quot;#box&quot;至<a-entity id="box">）。	|空值|
+|selectorAll	|调用querySelectorAll并转换NodeList为Array（例如，转换为&quot;.boxes&quot;[&lt;a-entity class =“ boxes”，…]），	|空值|
+|串	|不做任何解析。	|''|
+|vec2	|解析两个数字到{x, y}对象（例如，1 -2到{x: 1, y: -2}。	|{x：0，y：0}|
+|vec3	|将三个数字解析为一个{x, y, z}对象（例如1 -2 3到）|{x: 1, y: -2, z: 3}。	{x：0，y：0，z：0}|
+|vec4	|解析四个数字到{x, y, z, w}对象（例如，1 -2 3 -4.5到{x: 1, y: -2, z: 3, w: -4.5}。	|{x：0，y：0，z：0，w：0}|</a-entity></url></p> <h3 id="属性类型推断"><a href="#属性类型推断" class="header-anchor">#</a> 属性类型推断</h3> <p>该模式将尝试推断仅给定默认值的属性类型：</p> <div class="language- extra-class"><pre class="language-text"><code>架构：{ 默认：10 }   //类型： “数字”
+的模式：{ 缺省：“foo”的 }   //类型： “串”
+模式：{ 默认：[ 1，2，3 ]}   //类型： “阵列”
+</code></pre></div><p>给定属性类型，该模式将设置默认值（如果未提供）：</p> <div class="language- extra-class"><pre class="language-text"><code>模式：{type：'number'} //默认值：0 
+模式：{type：'string'} //默认值：'' 
+模式：{type：'vec3'} //默认值：{x：0，y：0 ，z：0}
+</code></pre></div><h3 id="自定义属性类型"><a href="#自定义属性类型" class="header-anchor">#</a> 自定义属性类型</h3> <p>我们还可以通过提供parseand stringify 函数代替a 来定义自己的属性类型type：</p> <div class="language- extra-class"><pre class="language-text"><code>schema: {
+  // Parse slash-delimited string to an array (e.g., `foo=&quot;myProperty: a/b&quot;` to `['a', 'b']`),
+  // stringify array to string (e.g., `['a', 'b']` to `foo=&quot;myProperty: a/b&quot;`)
+  myProperty: {
+    default: [],
+    parse: function (value) {
+      return value.split('/');
+    },
+    stringify: function (value) {
+      return value.join('/');
+    }
+  }
+}
+</code></pre></div><p>parse通过setAttribute方法更新组件属性时调用。 stringify通过flushToDom方法更新DOM时调用。</p> <h3 id="单属性架构"><a href="#单属性架构" class="header-anchor">#</a> 单属性架构</h3> <p>组件可以是单属性组件（由一个匿名值组成）或多属性组件（由多个命名值组成）。A框架将根据架构的结构推断组件是单属性还是多属性。</p> <p>单属性组件的架构包含type和/或default键，并且架构的值是纯值而不是对象：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent('foo', {
+  schema: {type: 'int', default: 5}
+});
+&lt;a-scene&gt;
+  &lt;a-entity foo=&quot;20&quot;&gt;&lt;/a-entity&gt;
+&lt;/a-scene&gt;
+</code></pre></div><h2 id="定义生命周期处理程序方法"><a href="#定义生命周期处理程序方法" class="header-anchor">#</a> 定义生命周期处理程序方法</h2> <p>模式是解剖学，生命周期方法是生理学。模式定义了数据的形状，生命周期处理程序方法使用 数据来修改实体。处理程序通常将与Entity API进行交互 。</p> <h3 id="方法概述"><a href="#方法概述" class="header-anchor">#</a> 方法概述</h3> <table><thead><tr><th>方法</th> <th>描述</th></tr></thead> <tbody><tr><td>在里面</td> <td>组件初始化时调用一次。用于设置初始状态和实例化变量。</td></tr> <tr><td>更新</td> <td>在组件初始化时以及组件的任何属性更新时（例如，通过setAttribute）都被调用。用于修改实体。</td></tr> <tr><td>去掉</td> <td>当组件从实体中移除（例如，通过removeAttribute）或实体与场景分离时调用。用于撤消对实体的所有先前修改。</td></tr> <tr><td>蜱</td> <td>在场景的每个渲染循环或刻度上调用。用于连续更改或检查。</td></tr> <tr><td>ck</td> <td>场景渲染后，在场景的每个渲染循环或刻度上调用。用于后期处理效果或绘制场景后需要发生的其他逻辑。</td></tr> <tr><td>玩</td> <td>每当场景或实体播放以添加任何背景或动态行为时调用。组件初始化时也调用一次。用于启动或恢复行为。</td></tr> <tr><td>暂停</td> <td>每当场景或实体暂停以删除任何背景或动态行为时调用。当组件从实体中移除或实体与场景分离时也调用</td></tr> <tr><td>updateSchema</td> <td>每当更新组件的任何属性时调用。可用于动态修改架构。</td></tr></tbody></table> <h2 id="组件原型属性"><a href="#组件原型属性" class="header-anchor">#</a> 组件原型属性</h2> <p>在这些方法中，我们可以通过this以下方式访问组件原型：</p> <table><thead><tr><th>属性</th> <th>描述</th></tr></thead> <tbody></tbody></table> <p>|此数据	|根据架构默认值，mixin和实体的属性计算出的已解析组件属性。
+要点：不要直接修改数据属性。它由A-Frame内部更新。要修改组件，请使用setAttribute。
+||这个	|将实体引用为HTML元素。
+||this.el.sceneEl	|将场景作为HTML元素引用。
+||this.id	|如果该组件可以具有多个实例，则该组件的单个实例的ID（例如foofrom sound__foo）。|</p> <h3 id="init"><a href="#init" class="header-anchor">#</a> .init ()</h3> <p>.init ()在组件生命周期的开始被调用一次。实体可以调用组件的init处理程序：</p> <p>在HTML文件中的实体上静态设置组件并加载页面时。
+当组件通过设置在附加实体上时setAttribute。
+当组件设置在未附加的实体上时，然后将该实体通过附加到场景appendChild。
+该init处理程序通常用于：</p> <p>设置初始状态和变量
+绑定方法
+附加事件监听器
+例如，游标组件init将设置状态变量，绑定方法并添加事件侦听器：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent('cursor', {
+  // ...
+  init: function () {
+    // Set up initial state and variables.
+    this.intersection = null;
+    // Bind methods.
+    this.onIntersection = AFRAME.utils.bind(this.onIntersection, this);
+    // Attach event listener.
+    this.el.addEventListener('raycaster-intersection', this.onIntersection);
+  }
+  // ...
+</code></pre></div><h3 id="update-olddata"><a href="#update-olddata" class="header-anchor">#</a> .update (oldData)</h3> <p>.update (oldData)只要组件的属性发生更改（包括在组件生命周期的开始），就会调用。实体可以调用组件的update处理程序：</p> <p>在init ()组件生命周期的开始，调用after。
+使用来更新组件的属性时.setAttribute。
+该update处理程序通常用于：</p> <p>使用进行大部分修改实体的工作this.data。
+只要一个或多个组件属性发生更改，就修改实体。
+颗粒状修改的实体可以通过完成版本比较当前数据集（this.data更新之前），与以前的数据集（oldData）。</p> <p>A-Frame会.update()在组件生命周期的开始以及每次组件数据发生更改时（例如，由于setAttribute）而调用。更新处理程序通常用于this.data修改实体。更新处理程序可以通过其第一个参数访问组件数据的先前状态。我们可以使用组件的先前数据来准确说明更改了哪些属性以进行粒度更新。</p> <p>例如，可见组件update设置实体的可见性。</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'visible'，{ / **    * this.el是实体元素。   * this.el.object3D是实体的three.js对象。   * this.data是组件的一个或多个属性。   * /   更新：function（oldData） { this .el.object3D.visible = this .data;   } // ... }）;
+</code></pre></div><h3 id="remove"><a href="#remove" class="header-anchor">#</a> .remove ()</h3> <p>.remove ()每当组件与实体分离时，都会调用。实体可以调用组件的remove处理程序：</p> <p>通过将该组件从实体中移除时removeAttribute。
+当实体从场景分离时（例如removeChild）。
+该remove处理程序通常用于：</p> <p>删除，撤消或清除组件对实体的所有修改。
+分离事件侦听器。
+例如，当移除灯光组件时，该灯光组件将移除它先前在实体上设置的灯光对象，从而将其从场景中移除。</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'light'，{ // ...   remove：function（
+  
+） { this .el.removeObject3D（'light'）;   } // ... }）;
+</code></pre></div><h3 id="tick-time-timedelta"><a href="#tick-time-timedelta" class="header-anchor">#</a> .tick (time, timeDelta)</h3> <p>.tick ()在场景的渲染循环的每个刻度或帧上调用。场景将调用组件的tick处理程序：</p> <p>在渲染循环的每个帧上。
+每秒约60至120次。
+如果实体或场景未暂停（例如，检查器处于打开状态）。
+实体是否仍附加到场景。
+该tick处理程序通常用于：</p> <p>在每个帧或间隔上连续修改实体。
+轮询条件。
+为tick处理程序提供场景的全局运行时间（以毫秒为单位time），以及自上一帧以来的时间差（以毫秒为单位timeDelta）。这些可用于插值或仅tick在设定的时间间隔运行 处理程序的一部分。</p> <p>例如，被跟踪的控件组件将进行控制器的动画处理，更新控制器的位置和旋转以及检查按钮是否按下。</p> <p>AFRAME.registerComponent（'tracked-controls'，{ // ...   tick：function（time，timeDelta） { this .updateMeshAnimation（）; this .updatePose（）; this .updateButtons（）;   } // ... } ）;</p> <p>.tock (time, timeDelta, camera)
+与tick方法相同，但是在渲染场景之后调用。</p> <p>该tock处理器用于运行之前它推入耳机像后处理效果，需要进入现场绘制逻辑。</p> <p>.pause ()
+.pause ()在实体或场景暂停时调用。实体可以调用组件的pause处理程序：</p> <p>在删除组件之前，在remove调用处理程序之前。
+当实体通过暂停时Entity.pause ()。
+当场景暂停时Scene.pause ()（例如，打开检查器）。
+该pause处理程序通常用于：</p> <p>删除事件监听器。
+消除任何动态行为的机会。
+例如，声音组件将暂停声音并删除将在事件上播放声音的事件侦听器：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'sound'，{ // ...   pause：function（
+  
+） { 这个 .pauseSound（）; 这个 .removeEventListener（）;   } // ... }）;
+</code></pre></div><h3 id="play"><a href="#play" class="header-anchor">#</a> .play ()</h3> <p>.play ()在实体或场景恢复时调用。实体可以调用组件的play处理程序：</p> <p>首次附加组件时，在update调用处理程序之后。
+当实体暂停但随后使用恢复时Entity.play ()。
+场景暂停时，然后按恢复Scene.play ()。
+该play处理程序通常用于：</p> <p>添加事件监听器。
+例如，声音组件将播放声音并更新将在事件上播放声音的事件侦听器：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'sound'，{ // ...   play：function（
+  
+） { 如果（此 .data.autoplay）{ 此 .playSound（）; } 这个 .updateEventListener（）;   } // ... }）;
+    
+</code></pre></div><h3 id="updateschema-data"><a href="#updateschema-data" class="header-anchor">#</a> .updateSchema (data)</h3> <p>.updateSchema ()如果定义了，则会在每次更新时调用，以检查是否需要动态修改架构。</p> <p>该updateSchema处理程序通常用于：</p> <p>动态更新或扩展架构，通常取决于属性的值。
+例如，几何图形组件检查primitive 属性是否更改，以确定是否为其他类型的几何图形更新模式：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'geometry'，{ // ...   updateSchema：（newData）{ 如果（newData.primitive！== 此 .data.primitive）{ 此 .extendSchema（GEOMETRIES [newData.primitive] .schema）;     }   } // ... }）;
+  
+</code></pre></div><h2 id="定义属性"><a href="#定义属性" class="header-anchor">#</a> 定义属性</h2> <h3 id="dependencies"><a href="#dependencies" class="header-anchor">#</a> dependencies</h3> <p>dependencies如果组件依赖一个或多个其他组件，则允许控制组件初始化的顺序。dependencies数组中指定的组件名称将在初始化当前组件之前从左到右初始化。如果依赖项具有其他依赖项组件，则这些其他依赖项组件将以相同的方式排序：</p> <div class="language- extra-class"><pre class="language-text"><code>//最后初始化。
+AFRAME.registerComponent（'a'，{ 
+  依赖项：[ 'b' ] 
+}）;
+
+//初始化第二个。
+AFRAME.registerComponent（'b'，{ 
+  依赖项：[ 'c' ] 
+}）;
+
+//首先初始化。
+AFRAME.registerComponent（'c'，{}）;
+</code></pre></div><h3 id="multiple"><a href="#multiple" class="header-anchor">#</a> multiple</h3> <p>该multiple标志允许组件在实体上具有其自身的多个实例。由于默认multiple设置为false，因此实体只能有一个组件的单个实例。例如，一个实体只能有一个几何组件。</p> <p>但是，如果组件将multiple设置为true，则该组件可以具有多个实例：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'foo'，{ 
+  multiple：true，// ... }）;
+  
+</code></pre></div><p>在DOM中，我们可以通过提供双下划线和ID（__<ID>）后缀来区分组件实例。例如，要附加声音组件的多个实例：</ID></p> <div class="language- extra-class"><pre class="language-text"><code>&lt; a- 场景 &gt; &lt; a-entity 声音 = “ src：url（sound.mp3）” sound__beep = “ src：url（beep.mp3）” sound__boop = “ src：url（boop.mp3）”   &gt; &lt;/ a-实体 &gt; &lt;/ a-场景 &gt;
+  
+</code></pre></div><p>从组件生命周期处理程序方法中，我们可以使用区分组件实例this.id。如果组件实例设置为 foo__bar，this.id则将为&quot;bar&quot;：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'foo'，{ 
+  multiple：true，
+
+  更新：功能（） { console .log（'此组件实例具有ID'，此 .id）;   } }）;
+</code></pre></div><p>如果我们正在做a setObject3D()，我们通常会想使用this.attrName。如果组件实例设置为foo__bar，this.attrName则将为 foo__bar。这为我们提供了一个名称空间和一个ID，用于object3D在实体的上设置object3DMap：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'foo'，{ 
+  multiple：true，
+
+  更新：功能（} { //使用`foo__bar`作为键来设置一个object3D。这个 .el.setObject3D（这个 .attrName，新的 THREE.Mesh（））;   } }）;
+</code></pre></div><h3 id="events"><a href="#events" class="header-anchor">#</a> events</h3> <p>该events对象允许方便地定义事件处理程序，这些事件处理程序在组件的生命周期中的适当时间进行绑定并自动附加和分离：</p> <ul><li>附于 .play()</li> <li>于.pause()和.remove()
+使用events确保事件处理程序在实体或场景暂停或组件分离时正确地自行清理。如果组件的事件处理程序是手动注册的并且未正确分离，则即使该组件不再存在，事件处理程序仍然可以触发。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'foo'，{ 
+  事件：{ 
+    单击：函数（evt） { 控制台 .log（'已单击此实体！'）；此 .el.setAttribute（'material'，'color'，'red'） ;     }   } }）;
+</code></pre></div><h2 id="组件原型方法"><a href="#组件原型方法" class="header-anchor">#</a> 组件原型方法</h2> <h3 id="flushtodom"><a href="#flushtodom" class="header-anchor">#</a> .flushToDOM ()</h3> <p>为了节省字符串化的CPU时间，A-Frame仅在调试模式下更新实际DOM中组件的序列化表示形式。调用 flushToDOM ()将手动序列化组件的数据并更新DOM：</p> <div class="language- extra-class"><pre class="language-text"><code>document .querySelector（'[geometry]'）.components.geometry.flushToDOM（）;
+</code></pre></div><p>阅读有关组件到DOM序列化的更多信息。</p> <h2 id="访问组件的成员和方法"><a href="#访问组件的成员和方法" class="header-anchor">#</a> 访问组件的成员和方法</h2> <p>可以从.components对象通过实体访问组件的成员和方法 。从实体的组件映射中查找组件，然后我们就可以访问组件的内部。考虑以下示例组件：</p> <div class="language- extra-class"><pre class="language-text"><code>AFRAME.registerComponent（'foo'，{ 
+  init：function（） { this .bar = 'baz' ;   }，
+    
+
+
+  qux：函数（） { // ...   } }）;
+    
+</code></pre></div><p>让我们访问bar成员和qux方法：</p> <div class="language- extra-class"><pre class="language-text"><code>var fooComponent = document .querySelector（'[foo]'）.components.foo; 
+控制台 .log（fooComponent.bar）; 
+fooComponent.qux（）;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.db1f5619.js" defer></script><script src="/assets/js/2.136755fd.js" defer></script><script src="/assets/js/11.934355de.js" defer></script>
+  </body>
+</html>
